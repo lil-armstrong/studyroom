@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Administration Module"
+AuthUserFile /opt/lampp/apache2/users
+require valid-user

@@ -1,0 +1,464 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"quer",
+				"querySQLi"
+			],
+			[
+				"qu",
+				"querySQLi"
+			],
+			[
+				"dept",
+				"_dept_msg"
+			],
+			[
+				"bg",
+				"bg_image_3"
+			],
+			[
+				"btn",
+				"btn-default"
+			],
+			[
+				"ms",
+				"msg"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"row_",
+				"row_count"
+			],
+			[
+				"fa-",
+				"fa-chevron-circle-right"
+			],
+			[
+				"all",
+				"all_pages"
+			],
+			[
+				"last",
+				"lastpage"
+			],
+			[
+				"news",
+				"news_row"
+			],
+			[
+				"row",
+				"row_cat_all"
+			],
+			[
+				"preg",
+				"preg_match"
+			],
+			[
+				"close",
+				"close_tags"
+			],
+			[
+				"string",
+				"stringCut"
+			],
+			[
+				"for",
+				"foreach\tforeach …"
+			],
+			[
+				"str",
+				"stripos"
+			],
+			[
+				"strps",
+				"strpos"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "navbar.php",
+			"settings":
+			{
+				"buffer_size": 63315,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/root/Downloads/4kvideodownloader_4.4.0_amd64/4kvideodownloader/4kvideodownloader.sh",
+			"settings":
+			{
+				"buffer_size": 192,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "index.php",
+			"settings":
+			{
+				"buffer_size": 56364,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/css/custom.css",
+			"settings":
+			{
+				"buffer_size": 32126,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 124.0,
+		"last_filter": "install",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Install Package Control"
+			]
+		],
+		"width": 461.0
+	},
+	"console":
+	{
+		"height": 151.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": true,
+		"show_tabs": false,
+		"side_bar_visible": true,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/opt/lampp/htdocs/public/studyroom.com.ng"
+	],
+	"file_history":
+	[
+		"/opt/lampp/htdocs/public/studyroom.com.ng/messages.php",
+		"/opt/lampp/htdocs/public/studyroom.com.ng/viewmsg.php",
+		"/opt/lampp/htdocs/public/studyroom.com.ng/assets/css/bootstrap/css/bootstrap.css",
+		"/opt/lampp/htdocs/public/studyroom.com.ng/navbar.php",
+		"/opt/lampp/htdocs/public/skillupnigeriaproject.com.ng/functions.php",
+		"/opt/lampp/htdocs/public/GenericSite/Site/class/class.sitefeature.php",
+		"/media/root/Transend/Link to All/Projects/PHP Storm/WebProjects/talk/assets/css/style.css",
+		"/opt/lampp/htdocs/public/GenericSite/Site/index.php",
+		"/media/root/Transend/Link to All/Projects/PHP Storm/WebProjects/Learn_bootstrap/css/bootstrap/css/bootstrap.min.css",
+		"/media/root/Transend/Link to All/Projects/PHP Storm/WebProjects/Learn_bootstrap/Band/index.html",
+		"/opt/lampp/htdocs/public/GenericSite/Site/class/class.dbmgmt.php",
+		"/opt/lampp/htdocs/public/GenericSite/Site/interface/interface.dbmgmt.php",
+		"/opt/lampp/htdocs/public/GenericSite/Site/abstract/abstract.response.php",
+		"/media/root/Transend/Link to All/Projects/PHP Storm/WebProjects/geektalk/feedpage.php",
+		"/media/root/Transend/Link to All/Projects/PHP Storm/WebProjects/geektalk/index.php",
+		"/media/root/Transend/Link to All/Projects/PHP Storm/WebProjects/geektalk/login.php",
+		"/opt/lampp/htdocs/public/studyroom/assets/js/jquery.countdown-2.2.0/jquery.countdown.js",
+		"/var/www/Recipe/Application/test/Site/index.php",
+		"/var/www/Recipe/Application/test/Site/class/class.dbmgmt.php",
+		"/var/www/Recipe/Application/test/Site/interface/interface.dbmgmt.php",
+		"/var/www/Recipe/Application/test/Site/class/class.site.php",
+		"/var/www/Recipe/Application/test/Site/interface/interface.site.php",
+		"/var/www/Recipe/Application/test/Site/class/class.sitefeature.php",
+		"/var/www/Recipe/Application/test/Site/interface/interface.sitefeature.php",
+		"/opt/lampp/htdocs/public/GenericSite/SiteMgmt",
+		"/var/www/Recipe/Application/test/Site/Site.php",
+		"/var/www/Recipe/Application/test/chap_01_autoload_test.php",
+		"/var/www/Recipe/Application/test/testclass.php",
+		"/var/www/Recipe/Application/autoload/loader.php",
+		"/root/Documents/Web Projects/skillupnigeriaproject.com.ng/admin/bower_components/bootstrap-fileinput/js/fileinput.min.js",
+		"/root/Documents/Web Projects/skillupnigeriaproject.com.ng/admin/bower_components/fileinput.min.js",
+		"/root/Documents/Web Projects/skillupnigeriaproject.com.ng/admin/index.php",
+		"/root/Documents/Web Projects/skillupnigeriaproject.com.ng/news.php",
+		"/root/Documents/Web Projects/skillupnigeriaproject.com.ng/search.php",
+		"/root/Documents/Web Projects/skillupnigeriaproject.com.ng/inc-js.phtml",
+		"/root/Documents/Web Projects/skillupnigeriaproject.com.ng/newsdetails.php",
+		"/root/Documents/Web Projects/skillupnigeriaproject.com.ng/about_us.php",
+		"/root/Documents/Web Projects/skillupnigeriaproject.com.ng/apply.php",
+		"/root/Documents/Web Projects/skillupnigeriaproject.com.ng/contacts.php",
+		"/root/.config/sublime-text-3/Packages/User/ColorPicker.sublime-settings",
+		"/root/.config/sublime-text-3/Packages/ColorPicker/ColorPicker.sublime-settings",
+		"/root/.config/sublime-text-3/Packages/ColorPicker/Default (Linux).sublime-keymap",
+		"/media/root/Transend/1 NTFS_000/Okposong Backup/Web Projects/skillupnigeriaproject.com.ng/functions.php"
+	],
+	"find":
+	{
+		"height": 22.0
+	},
+	"find_in_files":
+	{
+		"height": 121.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			");\n",
+			"dept_msg_id",
+			"all_msgs",
+			"about",
+			": ",
+			"duration",
+			".bordered {\n    border: 1px solid rgba(43, 200, 135, 0.5);\n}",
+			"></",
+			"hidden-sm"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"all_dept_msgs",
+			"msgs"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "navbar.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 63315,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1188,
+								1188
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/root/Downloads/4kvideodownloader_4.4.0_amd64/4kvideodownloader/4kvideodownloader.sh",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 192,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/ShellScript/Shell-Unix-Generic.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "index.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 56364,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 170.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "assets/css/custom.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 32126,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 7639.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 21.0
+	},
+	"input":
+	{
+		"height": 43.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 120.0
+	},
+	"pinned_build_system": "",
+	"project": "studyroom.com.ng.sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 251.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
