@@ -16,7 +16,7 @@ class DbMgmt extends MsgAbstract implements DbMgmtInterface
         self::$_user = $user;
         self::$_pass = $pass;
         self::$_db_name = $db_name;
-        self::$_conn = new PDO("mysql:host=" . self::$_host . ";dbname=" . self::$_db_name, self::$_user, self::$_pass);
+        self::$_conn = new PDO("pgsql:host=" . self::$_host . ";dbname=" . self::$_db_name, self::$_user, self::$_pass);
         #Attempt database connection
         $this->dbConnect();
 
