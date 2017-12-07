@@ -8,7 +8,6 @@
 
 class User extends LogAbstract implements UserInterface
 {
-//    const table = "members";
     public $messenger;
     protected $_id;
     protected $_conn;
@@ -45,12 +44,31 @@ class User extends LogAbstract implements UserInterface
         $this->pass = $pass;
         $this->_username = $username;
         $this->_type = LogAbstract::login($this->_conn, $username, $pass);
-        if (($this->_type === "student" || $this->_type === "tutor")) {
-//            exit($this->_type);
-            $this->createUser($username, $this->_type);
-            $this->setID();
-            $this->setUserType($this->_type);
 
+
+        if ($this->_type === "student") {
+            $this->createUser($username, "student");
+            $this->setID();
+            // if($this->_type === "student"){
+            //     $this->_feature = new Question($this->_conn);
+            // }
+            // else{
+            //     $this->_feature = new Answer($this->_conn);
+            // }
+            return true;
+        } elseif ($this->_type === "tutor") {
+            $this->createUser($username, "tutor");
+            $this->setID();
+            // if($this->_type === "student"){
+            //     $this->_feature = new Question($this->_conn);
+            // }
+            // else{
+            //     $this->_feature = new Answer($this->_conn);
+            // }
+            return true;
+        } elseif ($this->_type === "vendor") {
+            $this->createUser($username, "vendor");
+            $this->setID();
             // if($this->_type === "student"){
             //     $this->_feature = new Question($this->_conn);
             // }
@@ -65,23 +83,17 @@ class User extends LogAbstract implements UserInterface
 
     /**
      * @param $username
+     * @param $type
      */
     public function createUser($username, $type)
     {
         $this->_username = $username;
-        $this->setUserType($type);
+        $this->_type = $type;
+//        exit($this->_type);
         $this->setID();
         $this->setUserEmail();
         $this->setHelpCount();
         $this->setDept();
-    }
-
-    private function setUserType($type)
-    {
-//        $query = "SELECT type FROM " . self::table . " WHERE `username`='" . $this->_username . "'";
-//        $result = $this->_conn->querySQLi($query, [])->fetch(2);
-//        $this->_type = $result{'type'};
-        $this->_type = $type;
     }
 
     /**
@@ -89,14 +101,14 @@ class User extends LogAbstract implements UserInterface
      */
     private function setID()
     {
-        $query = "SELECT uid FROM " . $this->_type . " WHERE `username`='" . $this->_username . "'";
+        $query = "SELECT uid FROM " . $this->_type . " WHERE username='" . $this->_username . "'";
         $result = $this->_conn->querySQLi($query, [])->fetch(2);
         $this->_id = trim($result{'uid'}, '0');
     }
 
     private function setUserEmail()
     {
-        $query = "SELECT email FROM " . $this->_type . " WHERE `username`='" . $this->_username . "' ";
+        $query = "SELECT email FROM " . $this->_type . " WHERE username='" . $this->_username . "' ";
         $result = $this->_conn->querySQLi($query, [])->fetch(2);
         $this->_email = $result{'email'};
     }
@@ -107,7 +119,8 @@ class User extends LogAbstract implements UserInterface
             $get = "student_help";
         else
             $get = "tutor_help";
-        $query = "SELECT total FROM $get WHERE `uid`='" . $this->_id . "'";
+        $query = "SELECT total FROM $get WHERE uid=" . ($this->_id);
+
         $result = $this->_conn->querySQLi($query, [])->fetch(2);
         $this->_help_count = $result{'total'};
     }
@@ -131,22 +144,22 @@ class User extends LogAbstract implements UserInterface
             if (is_array($details) && count($details)) {
                 extract($details);
                 if ($this->_conn->TableExists($type)) {
-                    $query = "INSERT INTO " . $type . " (`uid`,`username`,`firstname`,`middlename`,`lastname`,`sex`,`dob`,`marital_status` ,`edulevel` ,`school`,`field`,`city`,`state`,`nationality`,`zipcode`,`pass`,`email`,`phone`,`type`, `create_dt`,`last_login` ) VALUES 
+                    $query = "INSERT INTO " . $type . " (uid,username,firstname,middlename,lastname,sex,dob,marital_status ,edulevel ,school,dept,city,state,nationality,zipcode,pass,email,phone,type, create_dt,last_login ) VALUES 
                 (NULL,'$username','$firstname','$middlename','$lastname','$sex','$dob','$marital','$edulevel','$school','$field','$city', '$state','$nation','$zipcode','$pass','$email','$phone','$type', NOW(),NULL)";
                 }
             } else {
-                $query = "INSERT INTO " . $type . " (`uid`,`username`,`firstname`,`middlename`,`lastname`,`sex`,`dob`,`marital_status` ,`edulevel` ,`school`,`field`,`city`,`state`,`nationality`,`zipcode`,`pass`,`email`,`phone`,`type`, `create_dt`,`last_login` ) VALUES 
+                $query = "INSERT INTO " . $type . " (uid,username,firstname,middlename,lastname,sex,dob,marital_status ,edulevel ,school,dept,city,state,nationality,zipcode,pass,email,phone,type, create_dt,last_login ) VALUES 
             ({$details})";
             }
         } else {
             if (is_array($details) && count($details)) {
                 extract($details);
                 if ($this->_conn->TableExists($type)) {
-                    $query = "INSERT INTO " . $type . " (`uid`,`username`,`firstname`,`middlename`,`lastname`,`sex`,`dob`,`marital_status` ,`edulevel` ,`school`,`field`,`city`,`state`,`nationality`,`zipcode`,`pass`,`email`,`phone`,`type`, `create_dt`,`last_login` ) VALUES 
-                (NULL,'$username','$firstname','$middlename','$lastname','$sex','$dob','$marital','$edulevel','$school','$field','$city','$state','$nation','$zipcode','$pass','$email','$phone','$type', NOW(),NULL)";
+                    $query = "INSERT INTO " . $type . " (uid,username,firstname,middlename,lastname,sex,dob,marital_status ,edulevel ,school,dept,city,state,nationality,zipcode,pass,email,phone,type, create_dt,last_login ) VALUES 
+                (NULL,'$username','$firstname','$middlename','$lastname','$sex','$dob','$marital','$edulevel','$school','$dept','$city','$state','$nation','$zipcode','$pass','$email','$phone','$type', NOW(),NULL)";
                 }
             } else {
-                $query = "INSERT INTO " . $type . " (`uid`,`username`,`firstname`,`middlename`,`lastname`,`sex`,`dob`,`marital_status` ,`edulevel` ,`school`,`field`,`city`,`state`,`nationality`,`zipcode`,`pass`,`email`,`phone`,`type`, `create_dt`,`last_login` ) VALUES 
+                $query = "INSERT INTO " . $type . " (uid,username,firstname,middlename,lastname,sex,dob,marital_status ,edulevel ,school,dept,city,state,nationality,zipcode,pass,email,phone,type, create_dt,last_login ) VALUES 
             ({$details})";
             }
         }
@@ -163,7 +176,7 @@ class User extends LogAbstract implements UserInterface
     public function removeUser()
     {
         if ($this->userExists()) {
-            $query = "DELETE FROM " . $this->_type . " WHERE `uid`='" . $this->_id . "'";
+            $query = "DELETE FROM " . $this->_type . " WHERE uid='" . $this->_id . "'";
             LogAbstract::logout();
         } else {
             MsgAbstract::errorMsg('Error, user does not exist anymore', 1);
@@ -172,7 +185,7 @@ class User extends LogAbstract implements UserInterface
 
     public function userExists()
     {
-        $query = "SELECT uid FROM " . $this->_type . " WHERE `uid`='" . $this->_id . "' AND `type`='" . $this->_type . "'";
+        $query = "SELECT uid FROM " . $this->_type . " WHERE uid='" . $this->_id . "' AND type='" . $this->_type . "'";
         $result = $this->_conn->querySQLi($query, [])->rowCount();
         if ($result)
             return true;
@@ -198,7 +211,7 @@ class User extends LogAbstract implements UserInterface
     public function NotifyTutor($qid, $tutor_id, $duration)
     {
 
-        $query = "INSERT INTO `tutor_msg` (`mid`,`qid`, `tutor_id`, `duration`, `level`, `msg_date`) VALUES 
+        $query = "INSERT INTO tutor_msg (mid,qid, tutor_id, duration, level, msg_date) VALUES 
 (NULL,'$qid','$tutor_id', '$duration', 'notify', NOW())";
         $this->_conn->querySQLi($query);
 
@@ -207,7 +220,7 @@ class User extends LogAbstract implements UserInterface
     public function AlertTutor($qid, $tutor_id, $duration)
     {
 
-        $query = "INSERT INTO `tutor_msg` (`mid`,`qid`, `tutor_id`, `duration`, `level`, `msg_date`) VALUES 
+        $query = "INSERT INTO tutor_msg (mid,qid, tutor_id, duration, level, msg_date) VALUES 
 (NULL,'$qid','$tutor_id', '$duration', 'alert', NOW())";
         $this->_conn->querySQLi($query);
 
@@ -216,7 +229,7 @@ class User extends LogAbstract implements UserInterface
     public function TutorAffirm($qid, $tutor_id, $duration)
     {
 
-        $query = "INSERT INTO `tutor_msg` (`mid`,`qid`, `tutor_id`, `duration`, `level`, `msg_date`) VALUES 
+        $query = "INSERT INTO tutor_msg (mid,qid, tutor_id, duration, level, msg_date) VALUES 
 (NULL,'$qid','$tutor_id', '$duration', 'affirm', NOW())";
         $this->_conn->querySQLi($query);
     }
@@ -224,7 +237,7 @@ class User extends LogAbstract implements UserInterface
     public function TutorConfirm($qid, $tutor_id, $duration)
     {
 
-        $query = "INSERT INTO `tutor_msg` (`mid`,`qid`, `tutor_id`, `duration`, `level`, `msg_date`) VALUES 
+        $query = "INSERT INTO tutor_msg (mid,qid, tutor_id, duration, level, msg_date) VALUES 
 (NULL,'$qid','$tutor_id', '$duration', 'confirm', NOW())";
         $this->_conn->querySQLi($query);
     }
@@ -232,7 +245,7 @@ class User extends LogAbstract implements UserInterface
     public function NotifyStudent($qid, $student_id, $duration)
     {
 //           add to table student_msg
-        $query = "INSERT INTO `student_msg` (`mid`,`qid`, `student_id`, `duration`, `level`, `msg_date`) VALUES 
+        $query = "INSERT INTO student_msg (mid,qid, student_id, duration, level, msg_date) VALUES 
 (NULL,'$qid', '$student_id', '$duration', 'notify', NOW())";
         $this->_conn->querySQLi($query);
 
@@ -241,7 +254,7 @@ class User extends LogAbstract implements UserInterface
     public function AlertStudent($qid, $student_id, $duration)
     {
 //           add to table student_msg
-        $query = "INSERT INTO `student_msg` (`mid`,`qid`, `student_id`, `duration`, `level`, `msg_date`) VALUES 
+        $query = "INSERT INTO student_msg (mid,qid, student_id, duration, level, msg_date) VALUES 
 (NULL,'$qid', '$student_id', '$duration', 'alert', NOW())";
         $this->_conn->querySQLi($query);
 
@@ -250,7 +263,7 @@ class User extends LogAbstract implements UserInterface
     public function StudentAffirm($qid, $student_id, $duration)
     {
 //           add to table student_msg
-        $query = "INSERT INTO `student_msg` (`mid`,`qid`, `student_id`, `duration`, `level`, `msg_date`) VALUES 
+        $query = "INSERT INTO student_msg (mid,qid, student_id, duration, level, msg_date) VALUES 
 (NULL,'$qid', '$student_id', '$duration', 'affirm', NOW())";
         $this->_conn->querySQLi($query);
 
@@ -259,7 +272,7 @@ class User extends LogAbstract implements UserInterface
     public function StudentConfirm($qid, $student_id, $duration)
     {
 //           add to table student_msg
-        $query = "INSERT INTO `student_msg` (`mid`,`qid`, `student_id`, `duration`, `level`, `msg_date`) VALUES 
+        $query = "INSERT INTO student_msg (mid,qid, student_id, duration, level, msg_date) VALUES 
 (NULL,'$qid', '$student_id', '$duration', 'confirm', NOW())";
         $this->_conn->querySQLi($query);
 
@@ -267,7 +280,7 @@ class User extends LogAbstract implements UserInterface
 
     public function getAllPersonalMsg()
     {
-        $query = "SELECT * FROM " . $this->getUserType() . "_msg INNER JOIN `questions` WHERE `" . $this->getUserType() . "_id`='" . $this->getID() . "' AND " . $this->getUserType() . "_msg.qid=questions.qid ORDER BY `msg_date` DESC LIMIT 10";
+        $query = "SELECT * FROM " . $this->getUserType() . "_msg INNER JOIN questions WHERE " . $this->getUserType() . "_id='" . $this->getID() . "' AND " . $this->getUserType() . "_msg.qid=questions.qid ORDER BY msg_date DESC LIMIT 10";
         return $this->_conn->querySQLi($query)->fetchAll(2);
     }
 
@@ -290,7 +303,7 @@ class User extends LogAbstract implements UserInterface
 
     public function getAllDeptMsg()
     {
-        $query = "SELECT * FROM " . $this->getUserType() . "_dept_msg INNER JOIN `questions` USING (`qid`)  ORDER BY `msg_date` DESC LIMIT 10";
+        $query = "SELECT * FROM " . $this->getUserType() . "_dept_msg INNER JOIN questions USING (qid)  ORDER BY msg_date DESC LIMIT 10";
         return $this->_conn->querySQLi($query)->fetchAll(2);
     }
 
@@ -325,37 +338,37 @@ class User extends LogAbstract implements UserInterface
         }
     }
 
-    /*Prepares the file to be uploaded and check for errors*/
-
     public function NotifyByDept($dept, $level = "")
     {
         /*Get the current user notifications*/
-        $query = "SELECT * FROM " . $this->_type . "_dept_msg WHERE `dept`='$this->_dept' ORDER BY msg_date DESC LIMIT 10 ";
+        $query = "SELECT * FROM " . $this->_type . "_dept_msg WHERE dept='$this->_dept' ORDER BY msg_date DESC LIMIT 10 ";
         $result = $this->_conn->querySQLi($query)->fetchAll(2);
 //        exit($query);
         return $result;
     }
 
-    /*Uploads files*/
+    /*Prepares the file to be uploaded and check for errors*/
 
     public function getDept()
     {
         return $this->_dept;
     }
 
-    /*Misc*/
+    /*Uploads files*/
 
     public function setDept()
     {
-        $query = "SELECT `field` FROM " . $this->_type . " WHERE `username`='" . $this->_username . "' ";
+        $query = "SELECT dept FROM " . $this->_type . " WHERE username='" . $this->_username . "' ";
 //        exit($query);
-        $this->_dept = $this->_conn->querySQLi($query, [])->fetch(2){'field'};
+        $this->_dept = $this->_conn->querySQLi($query, [])->fetch(2){'dept'};
     }
+
+    /*Misc*/
 
     public function NotifyUser()
     {
         /*Get the current user notifications*/
-        $query = "SELECT * FROM " . $this->_type . "_msg WHERE `" . $this->_type . "_id`=" . $this->_id . " LIMIT 10";
+        $query = "SELECT * FROM " . $this->_type . "_msg WHERE " . $this->_type . "_id=" . $this->_id . " LIMIT 10";
         $result = $this->_conn->querySQLi($query)->fetchAll(2);
         return $result;
     }
@@ -364,13 +377,32 @@ class User extends LogAbstract implements UserInterface
     {
         /*Find out the number of messages blacklisted or seen*/
         /*Get all user messages*/
-        $query = "SELECT * FROM " . $this->getUserType() . "_dept_msg  ORDER BY `msg_date` DESC LIMIT 10";
+        $query = "SELECT * FROM " . $this->getUserType() . "_dept_msg  ORDER BY msg_date DESC LIMIT 10";
         $all_dept_msgs = $this->_conn->querySQLi($query)->fetchAll(2);
         $seen_msgs = [];    //Holds all seen messages
         /*seen*/
         foreach ($all_dept_msgs as $dept_msg => $msg) {
             $mid = $msg['mid'];
-            $sqli = "SELECT * FROM " . $this->getUserType() . "_dept_msg_seen WHERE `mid`='$mid' AND `uid`='" . $this->getID() . "'";
+            $sqli = "SELECT * FROM " . $this->getUserType() . "_dept_msg_seen WHERE mid='$mid' AND uid='" . $this->getID() . "'";
+            $seen = $this->_conn->querySQLi($sqli)->fetch(2);
+            if ($seen)
+                $seen_msgs[] = $mid;
+        }
+        /*Output*/
+        return $seen_msgs;
+    }
+
+    public function getSeenPersonalMsgs()
+    {
+        /*Find out the number of messages blacklisted or seen*/
+        /*Get all user messages*/
+        $query = "SELECT * FROM " . $this->getUserType() . "_msg  ORDER BY msg_date DESC LIMIT 10";
+        $all_dept_msgs = $this->_conn->querySQLi($query)->fetchAll(2);
+        $seen_msgs = [];    //Holds all seen messages
+        /*get all seen*/
+        foreach ($all_dept_msgs as $dept_msg => $msg) {
+            $mid = $msg['mid'];
+            $sqli = "SELECT * FROM " . $this->getUserType() . "_msg_seen WHERE mid='$mid' AND uid='" . $this->getID() . "'";
             $seen = $this->_conn->querySQLi($sqli)->fetch(2);
             if ($seen)
                 $seen_msgs[] = $mid;
@@ -381,27 +413,6 @@ class User extends LogAbstract implements UserInterface
 
 
     /*Notifies the user as per individual*/
-
-    public function getSeenPersonalMsgs()
-    {
-        /*Find out the number of messages blacklisted or seen*/
-        /*Get all user messages*/
-        $query = "SELECT * FROM " . $this->getUserType() . "_msg  ORDER BY `msg_date` DESC LIMIT 10";
-        $all_dept_msgs = $this->_conn->querySQLi($query)->fetchAll(2);
-        $seen_msgs = [];    //Holds all seen messages
-        /*get all seen*/
-        foreach ($all_dept_msgs as $dept_msg => $msg) {
-            $mid = $msg['mid'];
-            $sqli = "SELECT * FROM " . $this->getUserType() . "_msg_seen WHERE `mid`='$mid' AND `uid`='" . $this->getID() . "'";
-            $seen = $this->_conn->querySQLi($sqli)->fetch(2);
-            if ($seen)
-                $seen_msgs[] = $mid;
-        }
-        /*Output*/
-        return $seen_msgs;
-    }
-
-    /*Notifies the user as per department*/
 
     /**
      * @param $type
@@ -433,7 +444,7 @@ class User extends LogAbstract implements UserInterface
             if (is_array($upload)) {
 
                 for ($i = 0; $i < sizeof($fsize); ++$i) {
-                    $crntfname = $fname{$i} ;
+                    $crntfname = $fname{$i};
                     $crntftype = $ftype{$i};
                     $fstrlen = strlen($crntfname); //Gets the file string length
                     $crntfloc = $ftmp_name{$i};     /*Get tmp location og file*/
@@ -442,7 +453,7 @@ class User extends LogAbstract implements UserInterface
                     $fext = substr($crntfname, ($fstrlen - 4));  // get extention string
                     $checkfext = substr($fext, 1);      //For checking file extension
                     $onlyfname = substr($crntfname, 0, ($fstrlen - 4));
-                    $onlyfname = strtolower(substr($onlyfname, 0,35));
+                    $onlyfname = strtolower(substr($onlyfname, 0, 35));
                     /*If part of supported extensions*/
                     if (in_array($crntftype, $allowedExts) && $crntferr < 524288) {
                         /*If any errors at all*/
@@ -497,7 +508,7 @@ class User extends LogAbstract implements UserInterface
                                 $upload_dir = 'assets/uploads/' . $type . '/' . $extdir . $proj . DIRECTORY_SEPARATOR;
                                 $upload_dir_file = $upload_dir . $finalfname . $fext;
 
-                                $query = "INSERT INTO `user_uploads`(`fid`, `filename`, `dir`, `uploader`,  `filetype`, `upload_type`, `upload_date`, `projtname`) 
+                                $query = "INSERT INTO user_uploads(fid, filename, dir, uploader,  filetype, upload_type, upload_date, projtname) 
 VALUES (NULL,'$finalfname','$upload_dir_file', '" . $this->_id . "','$crntftype', '$type',NOW(), '$proj')";
 
                                 //Resizing Picture
@@ -521,7 +532,7 @@ VALUES (NULL,'$finalfname','$upload_dir_file', '" . $this->_id . "','$crntftype'
                                 $upload_dir = 'assets/uploads/' . $type . '/' . $proj . DIRECTORY_SEPARATOR . $extdir;
                                 $upload_dir_file = $upload_dir . $finalfname . $fext;
 
-                                $query = "INSERT INTO `user_uploads`(`fid`, `filename`, `dir`, `uploader`,  `filetype`, `upload_type`, `upload_date`, `projtname`) 
+                                $query = "INSERT INTO user_uploads(fid, filename, dir, uploader,  filetype, upload_type, upload_date, projtname) 
 VALUES (NULL,'$finalfname','$upload_dir_file', '" . $this->_id . "','$crntftype', '$type',NOW(), '$proj')";
 
                                 /*If dir does not exist*/
@@ -535,7 +546,7 @@ VALUES (NULL,'$finalfname','$upload_dir_file', '" . $this->_id . "','$crntftype'
 
                                 /*If not an image file*/
                                 if (!(move_uploaded_file($crntfloc, $upload_dir_file) && $this->_conn->querySQLi($query))) {
-                                    $this->addErrors('Unable to save file!'.$link_home);
+                                    $this->addErrors('Unable to save file!' . $link_home);
                                     $this->popErrors();
                                     exit();
                                 }
@@ -543,7 +554,7 @@ VALUES (NULL,'$finalfname','$upload_dir_file', '" . $this->_id . "','$crntftype'
                             }
                         }
                     } else {
-                        $this->addErrors("<i>'" . $crntfname . "'</i> is an unsupported format.".$link_home);
+                        $this->addErrors("<i>'" . $crntfname . "'</i> is an unsupported format." . $link_home);
                         $this->popErrors();
                         exit();
                     }
@@ -553,6 +564,8 @@ VALUES (NULL,'$finalfname','$upload_dir_file', '" . $this->_id . "','$crntftype'
         }
         return $proj;
     }
+
+    /*Notifies the user as per department*/
 
     public function displayColumn($col)
     {
@@ -586,7 +599,7 @@ VALUES (NULL,'$finalfname','$upload_dir_file', '" . $this->_id . "','$crntftype'
     public function getColumn($col)
     {
         $args = $col;
-        $condition = 'WHERE `uid` = ' . $this->_id;
+        $condition = 'WHERE uid = ' . $this->_id;
         return $this->_conn->readCol(self::table, $args, $condition, 2);
     }
 
@@ -596,6 +609,14 @@ VALUES (NULL,'$finalfname','$upload_dir_file', '" . $this->_id . "','$crntftype'
             return TRUE;
         } else
             return FALSE;
+    }
+
+    protected function setUserType($type)
+    {
+        $query = "SELECT type FROM " . self::profile . " WHERE username='" . $this->_username . "'";
+        $result = $this->_conn->querySQLi($query, [])->fetch(2);
+        $this->_type = $result{'type'};
+
     }
 
 }

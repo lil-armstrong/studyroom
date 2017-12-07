@@ -14,6 +14,8 @@ $session = isset($_SESSION{'user'}) ? $_SESSION{'user'} : 0;
 $type = isset($_SESSION{'type'}) ? $_SESSION{'type'} : 0;
 $page = '';
 
+$user = new User($db);
+
 
 if ($login) {
     if ($user->loginUser($login_user, $login_pass)) {
@@ -22,26 +24,27 @@ if ($login) {
         echo "</script>";
     }
 }
-
+//echo "<pre>";
+//print_r($_SESSION);
+//echo "<pre>";
+//exit();
 
 /*If the user session is set*/
 if ($session) {
 //    $user->createUser($session);
-
     //    Check user type
     if ($type === 'student') {
         $user = new Student($db);
         $type = "student";
-    } else {
+    } elseif ($type === 'tutor') {
         $user = new Tutor($db);
         $type = "tutor";
     }
     $user->createUser($session, $type);
     /*Get all details about the current user*/
-    $query = "SELECT * FROM $type WHERE `username`='" . $session . "' ";
+    $query = "SELECT * FROM $type WHERE username='" . $session . "' ";
     $details = $db->querySQLi($query, [])->fetchAll(2);
     /*Get all ... TODO*/
-
     $switch = ($type === "student") ? "tutor" : "student";
     /*End of getting user data*/
 }

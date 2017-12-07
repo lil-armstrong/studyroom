@@ -1,0 +1,1000 @@
+apt-get upgrade
+apt-get upgrade libre*
+apt-get install --only-upgrade libre*
+apt install cinnamon cinnamon-desktop-environment 
+apt-get update --fix-missing
+ping www.google.com
+apt-get install cinnamon cinnamon-desktop-environment 
+ping www.google.com
+exit
+phpstorm.sh 
+exit
+./autogen.sh
+./configure
+make
+make install
+lighttpd
+lighttpd -h
+uniconv ted2.sk2 ted2.cdr
+ls
+uniconv
+uniconv ted2.sk2 ted3.svg
+ls
+uniconv
+uniconv ted2.sk2 ./ted3.svg
+ls
+uniconv ted2.sk2 t.svg
+phpstorm.sh
+exit
+armstrong
+exit
+vlc
+exit
+sudo -i
+vlc -h
+sed -i 's/geteuid/getppid/' /usr/bin/vlc
+vlc
+exit
+apt-get install cinnamon cinnamon-desktop-environment 
+apt update
+apt-get install cinnamon cinnamon-desktop-environment 
+apt-get install vlc
+apt autoremove
+apt autoclean
+apt-get install vlc --get-upgrade
+apt-get install vlc --get-update
+apt-get install vlc --only-upgrade
+vlc
+vlc-wrapper
+su
+exit
+gedit linux_tweaks
+wget --no-parent --wait=20 --limit-rate=20k ir -p -U Mozilla http://themes.vibethemes.com/wplms/skins/default/
+wget --no-parent --wait=20 --limit-rate=20k -r -p -U Mozilla http://themes.vibethemes.com/wplms/skins/default/
+cd Downloads/Templates/
+wget --no-parent --wait=20 --limit-rate=20k -r -p -U Mozilla http://themes.vibethemes.com/wplms/skins/default/
+exit
+apt-get install webhttrack
+wget -mkEpnp https://s.tmimgcdn.com/
+wget -mkEpnp -U Mozilla http://themes.vibethemes.com/wplms/skins/demo5/
+exit
+gedit wisdom.txt
+exit
+apt list
+apt list go*
+apt list go* --upgradable
+apt list li* --upgradable
+apt-get install libaccountsservice0 --only-upgrade
+apt-install python* --ony-upgrade
+apt-get install python* --ony-upgrade
+apt-get install python* --only-upgrade
+/etc/init.d/gdm3 restart
+/etc/init.d/gdm3 
+/etc/init.d/gdm3 start
+/etc/init.d/gdm3 status
+pip3 install feedparser
+apt-get list feed2exec
+apt list feed2exec
+apt
+apt 
+apt-get install feed2exec
+goa
+gnome-control-center 
+exit
+apt-get install pip3
+ping www.google.com
+apt-get install pip3
+ping www.google.com
+./index.theme
+sudo ./index.theme
+exit
+nautilus
+exit
+10
+C-o
+xampp
+exit
+vlc
+vlc -h
+vlc --rest-config
+vlc --rest-config skin*
+vlc --rest-config=interface
+vlc interface --rest-config
+vlc --rest-config interface
+vlc --reset-confi
+exit
+phpstorm.sh 
+chromium -h
+sudo apt-get install python3-dev
+pip install feedparser
+sudo apt-get install python-pip
+apt autoremove
+apt autoclean
+apt-get install thunderbird --only-upgrade
+apt-get install postfix postfix-doc
+postconf -e relayhost=smtp.isp.net
+whereis sendmail
+phpstorm.sh 
+exit
+phpstorm.sh 
+exit
+gedit revolution.extension.slideanims.min.js
+gedit             
+gedit 
+gedit revolution.extension.layeranimation.min.js
+gedit revolution.extension.navigation.min.js
+help
+httrack
+cd /opt/lampp/
+php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+php -r "if (hash_file('SHA384', 'composer-setup.php') === '544e09ee996cdf60ece3804abc52599c22b1f40f4323403c44d44fdfdd586475ca9813a858088ffbc1f233e9b180f061') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+php composer-setup.php
+php -r "unlink('composer-setup.php');"
+httrack https://getcomposer.org/doc/ -W -O "root/Downloads/Websites" -%v -r4 
+httrack <iframe style="height: 301px;" class="full-screen-preview__frame" src="http://adminify.theironnetwork.org/" name="preview-frame" noresize="noresize" data-view="fullScreenPreview" frameborder="0"> -W -O "root/Downloads/Websites" -%v -r4 
+</iframe>
+httrack
+ls
+cd Download/Templates/Adminify
+ls
+cd ..
+ls
+cd Templates/
+ls
+cd /root/Downloads/
+ls
+cd ..
+ls
+cd Download/Templates/
+ls
+Adminify/
+cd Adminify/
+nautilus
+nautilus dir
+dir
+dirs
+nautilus dirs
+nano
+nawk
+exit
+cd /root/Download/Templates/Adminify/
+exit
+phpstorm.sh 
+exit
+phpstorm.sh
+exit
+phpstorm.sh 
+apt-get install ant
+ping www.google.com
+phpstorm.sh 
+exit
+$ sendemail --help
+sendmail --help
+help sendmail 
+man -k sendmail
+man sendmail (8)
+man sendmail
+sendmail -
+exit
+tasksel install mail-server
+echo 'body' | sendmail oebong1@gmail.com
+php -r echo 'body' | sendmail oebong1@gmail.com
+apt-get install ssmtp
+festival
+exit
+gedit /etc/hosts
+service apache2 restart
+exit
+/etc/init.d/apache2 stop
+node -v
+node -v
+./node
+./npm
+./npx
+ls
+npm -v
+npm
+npm --help
+curl -O https://nodejs.org/dist/vx.y.z/SHASUMS256.txt.sig
+gpg --keyserver pool.sks-keyservers.net --recv-keys DD8F2338BAE7501E3DD5AC78C273792F7D83545D
+gpg --verify SHASUMS256.txt.sig SHASUMS256.txt
+cd js
+mpm install jquery
+npm install jquery
+bower
+npm install jquery
+npm -v
+npm
+cd /root/Downloads/node-v9.1.0-linux-x64/node-v9.1.0-linux-x64/bin
+npm
+npm -v
+n
+node
+node -v
+./node
+npm
+./npm
+phpstorm.sh 
+./4kvideodownloader
+./4kvideodownloader-bin
+411toppm 
+4kvideodownloader.sh
+./4kvideodownloader.sh
+phpstorm.sh 
+exit
+phpstorm.sh 
+exit
+./htpasswd -c /opt/lampp/apache2/users studyroomadmin
+exit
+phpstorm.sh 
+exit
+phpstorm.sh 
+exit
+apt-get install firefox --only-upgrade
+apt update
+exit
+ip
+ip -d
+ip -r
+ip -d localhost
+ip -d 127.0.0.1
+ipcs
+ip addr show
+./4kvideodownloader.sh 
+exit
+phpstorm.sh 
+exit
+composer global require "laravel/installer"
+exit
+cd php-getting-started/
+ls
+heroku create studyroom
+cd webchecker/
+npm Flask
+npm get Flask
+npm install -g Flask
+npm Flask
+npm install -g Flask
+python venv.com
+cd ..
+cd venv/
+npm Flask
+npm search Fl*
+cd ..
+ls
+python webchecker.com
+cd webchecker/
+pip install Flask
+pip webchecker.com
+pip
+python
+python webchecker.com
+python webchecker
+cd ..
+python webchecker.com
+python webchecker
+cd webchecker/
+ls
+python showchecks.py 
+npm Flask
+python checkwebsite0.py
+python showchecks.py 
+export FLASK_APP=hello.py
+flask run
+npm install flask
+flask run
+python checkwebsite0.py
+python hello.py
+flask
+cd node_modules/
+ls
+cd ..
+python hello.py
+pip show Flask
+heroku create webchecker01
+heroku create
+git add *.* *
+git add *
+git add .
+gedit index,html
+gedit index.html
+cd web/
+git clone https://lil-armstrong@bitbucket.org/lil-armstrong/studyroom.git
+git init
+git add .
+git commit -m "commit001"
+heroku create studyroom
+heroku create studyroom.com.ng
+heroku create studyroom_com_ng
+heroku create studyroom-main
+git remote -v
+git remote -v
+git push heroku master
+heroku ps:scale web=1
+cd ..
+git init
+git add .
+git commit -m "commit001"
+git push heroku master
+heroku git:remote -a studyroom-main
+git add .
+git commit -am "Make it better"
+git commit -a "Make it better"
+git commit -m "Make it better"
+git push heroku master
+git push --help
+heroku domains
+top/ps/netstat
+top
+top/ps
+top ps
+ps
+top
+postgres
+cd /etc/init.d/
+ls po*
+/postgresql
+exit
+heroku logs
+heroku logs --app stroom
+heroku auth:token
+cd Download
+ls
+mkdir phppgadmin
+git clone https://github.com/phppgadmin/phppgadmin.git
+git clone  https://github.com/dimitri/pgloader
+exit
+git clone https://lil-armstrong@bitbucket.org/lil-armstrong/studyroom.git
+git fetch && git checkout test-br
+git status
+cd studyroom/
+git status
+git add --all
+git status
+git commit -m 'Created an index.html file'
+git push
+git add --all
+git status
+git commit -m 'Added composer.json'
+composer install
+git add .
+git status
+git commit -m 'Added: procfile, composer.json'
+php -r "copy 'https:''getcomposer.org/installer','composer-setup.php');"
+php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+php -r "if (hash_file('SHA384', 'composer-setup.php') === '544e09ee996cdf60ece3804abc52599c22b1f40f4323403c44d44fdfdd586475ca9813a858088ffbc1f233e9b180f061') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+php composer-setup.php
+php -r "unlink('composer-setup.php');"
+php composer.phar install
+git add .
+git status
+git commit -m 'composer.lock, monolog'
+git push
+git add .
+git status
+git commit -m 'composer.lock, monolog'
+git push
+git add .
+git status
+git commit -m 'studyroom main project'
+git push
+git add 
+git add .
+git status
+git remote rename origin bitbucket
+git status
+git remote add origin git@github.com:lil-armstrong/studyroom.git
+git push origin master
+git remote add origin https://github.com/lil-armstrong/studyroom.git
+git push origin master
+git remote rm origin git@github.com:lil-armstrong/studyroom.git
+git remote remove origin git@github.com:lil-armstrong/studyroom.git
+git remote remove github
+git status
+git remote -v
+git remote add origin https://lil-armstrong@bitbucket.org/lil-armstrong/studyroom.git
+git remote remove origin git@github.com
+git remote remove origin 
+git remote add origin https://lil-armstrong@bitbucket.org/lil-armstrong/studyroom.git
+git remote -v
+git remote set-url origin https://lil-armstrong@bitbucket.org/lil-armstrong/studyroom.git
+git remote -v
+git init
+heroku create
+heroku git:remote -a stroom
+git push heroku master
+heroku ps:scale web=1
+heroku open
+heroku addons:create cleardb:ignite
+node -V
+node
+curl -sL https://deb.nodesource.com/setup_9.x | bash -
+apt-get install -y nodejs
+node -V
+node --version
+npm
+npm -V
+npm -l
+npm test
+npm start
+node -v
+npm install npm@latest -g
+npm -v'
+'
+npm -v
+npm install npm@latest -g
+apt-get install virtualenv
+ls
+cd /opt/lampp/htdocs/public/
+ls
+cd testrunHeroku/
+ls
+cd webchecker/
+cd..
+cd ..
+virtualenv venv
+echo "Activating the corresponding env" | . venv/bin/activate
+venv/bin/activate
+. venv/bin/activate
+deactivate 
+pip install Flask
+Flask
+ls
+cd venv
+. venv/bin/activate
+bin/activate
+cd ..
+. venv/bin/activate
+ls
+deactivate 
+cd webchecker/
+. venv/bin/activate
+.. venv/bin/activate
+. ../venv/bin/activate
+export FLASK_APP=hello.py
+flask run
+flask -v
+flask run
+nodejs -v
+apt-get install nodejs --only-update
+apt-get install nodejs --only-upgrade
+cd /usr/lib/python2.7/dist-packages/
+ls
+ls fl*
+flask
+python flask
+export FLASK_APP=hello.py
+flask run
+ls f*
+flask
+./flask
+.flask
+python flask
+python flask run
+/etc/init.d/apache2 start
+/etc/init.d/postgresql start
+postgresql
+/etc/init.d/postgresql status
+/etc/init.d/postgresql
+cat etc/passwd
+cat /var/lib/postgresql/9.6/main/postgresql.auto.conf 
+su - postgres 
+sudo -su postgres
+mysql
+/etc/init.d/mysql start
+/etc/init.d/mysql status
+mysql
+mysqldump -u root -p studyroom > /opt/lampp/htdocs/public/stroom/sqldump.txt
+mysql -u root -p
+mysql --user=root mysql
+mysql -u armstrong -p
+mysql -u root -p
+/etc/init.d/mysql stop
+mysql -u root -p
+mysqldump -u root -p studyroom > sqldump.txt
+ls study*
+ls s*
+gedit sqldump.txt 
+/etc/init.d/apache2 start
+cd vendor/bin/heroku-php-apache2 web/
+vendor/bin/heroku-php-apache2 web/
+ls
+/etc/init.d/apache2 stop
+/etc/init.d/apache2 start
+mysql -u root -p
+mysql -u admin -p
+mysql -u root -p
+/etc/init.d/mysql stop
+/etc/init.d/mysql start
+mysql -u root -p
+cd ~/Download
+ls
+cd ../Downloads
+ls
+mysql -u root -p
+phpstorm.sh 
+./build/bin/pgloader
+exit
+apt-get install pgloader
+apt.postgresql.org
+apt --help
+apt edit-sources 
+apt-get install sbcl unzip libsqlite3-dev make curl gawk freetds-dev libzip-dev
+cd Download
+ls
+cd pgloader/
+ls
+cd debian/
+ls
+cd ..
+make pgloader
+./build/bin/pgloader --help
+su - postgres
+mysql -u root -p
+mysqldump -u admin -p
+mysql -u admin -p
+/etc/init.d/mysql start
+mysql -u admin -p
+mysqldump -u admin -p --compatible=postgresql studyroom > ostudyroom.sql
+mysqldump -u root -p --compatible=postgresql studyroom > ostudyroom.sql
+ls
+ls o*
+cat ostudyroom.sql 
+su - postgres
+/etc/init.d/postgresql start
+gedit /etc/postgresql/pga_hba.cong
+gedit /etc/postgresql/pga_hba.conf
+rm
+rm /etc/postgresql/pga_hba.cong
+/etc/init.d/postgresql reload
+psql -h localhost -d studyroom -U armstrong
+lsb_release -c
+pgloader mysql://root@localhost/fierdb postgresql:///fierdb
+apt-get install libssl1.0.2 
+apt-get install libssl1.1
+apt full-upgrade
+apt remove postgresql
+apt autoremove
+apt install postgresql
+apt-get install -f
+sudo apt-get update
+sudo apt-get install postgresql
+apt-get install -f
+sudo apt-get install postgresql -f
+apt install autoconf
+sudo apt-get install postgresql -f
+apt-get install -t wheezy-pgdg postgresql-9.3
+#!/bin/sh
+# script to add apt.postgresql.org to sources.list
+# from command line
+CODENAME="$1"
+# lsb_release is the best interface, but not always available
+if [ -z "$CODENAME" ]; then     CODENAME=$(lsb_release -cs 2>/dev/null); fi
+# parse os-release (unreliable, does not work on Ubuntu)
+if [ -z "$CODENAME" -a -f /etc/os-release ]; then     . /etc/os-release     CODENAME=$(echo $VERSION | sed -ne 's/.*(\(.*\)).*/\1/'); fi
+# guess from sources.list
+if [ -z "$CODENAME" ]; then     CODENAME=$(grep '^deb ' /etc/apt/sources.list | head -n1 | awk '{ print $3 }'); fi
+# complain if no result yet
+if [ -z "$CODENAME" ]; then
+    cat <<EOF
+Could not determine the distribution codename. Please report this as a bug to
+pgsql-pkg-debian@postgresql.org. As a workaround, you can call this script with
+the proper codename as parameter, e.g. "$0 squeeze".
+EOF
+     exit 1; fi
+# errors are non-fatal above
+set -e
+cat <<EOF
+This script will enable the PostgreSQL APT repository on apt.postgresql.org on
+your system. The distribution codename used will be $CODENAME-pgdg.
+EOF
+case $CODENAME in     sid|stretch|jessie|wheezy|squeeze|lenny|etch) ;;     zesty|xenial|wily|trusty|precise|lucid) ;;     *) # unknown distribution, verify on the web DISTURL="http://apt.postgresql.org/pub/repos/apt/dists/"; if [ -x /usr/bin/curl ]; then     DISTHTML=$(curl -s $DISTURL); elif [ -x /usr/bin/wget ]; then     DISTHTML=$(wget --quiet -O - $DISTURL); fi; if [ "$DISTHTML" ]; then     if ! echo "$DISTHTML" | grep -q "$CODENAME-pgdg"; then g the distribution codename $CODENAME, but $CODENAME-pgdg; does not seem to be a valid distribution on; $DISTURL;  We abort the installation here. If you want to use a distribution different; from your system, you can call this script with an explicit codename, e.g.; "$0 precise".;  Specifically, if you are using a non-LTS Ubuntu release, refer to; https://wiki.postgresql.org/wiki/Apt/FAQ#I_am_using_a_non-LTS_release_of_Ubuntu;  For more information, refer to https://wiki.postgresql.org/wiki/Apt; or ask on the mailing list for assistance: pgsql-pkg-debian@postgresql.org; EOF;  "Press Enter to continue, or Ctrl-C to abort.";  read enter;  echo "Writing /etc/apt/sources.list.d/pgdg.list ..."
+cat > /etc/apt/sources.list.d/pgdg.list <<EOF
+deb http://apt.postgresql.org/pub/repos/apt/ $CODENAME-pgdg main
+#deb-src http://apt.postgresql.org/pub/repos/apt/ $CODENAME-pgdg main
+EOF
+  echo "Importing repository signing key ..."; KEYRING="/etc/apt/trusted.gpg.d/apt.postgresql.org.gpg"; test -e $KEYRING || touch $KEYRING
+apt-key --keyring $KEYRING add - <<EOF
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+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
+=DA1T
+-----END PGP PUBLIC KEY BLOCK-----
+EOF
+  echo "Running apt-get update ..."; apt-get update; 
+cat <<EOF
+You can now start installing packages from apt.postgresql.org.
+Have a look at https://wiki.postgresql.org/wiki/Apt for more information;
+most notably the FAQ at https://wiki.postgresql.org/wiki/Apt/FAQ
+EOF
+ 
+sudo apt-get install postgresql -f
+gedit Instr.txt
+echo "git clone https://github.com/maxlapshin/mysql2postgres.git" Instr.txt
+cd mysql2postgres
+bundle install
+gem build mysqltopostgres.gemspec
+sudo gem install mysqltopostgres-0.2.20.gem
+gedit Instr.txt
+su - postgres 
+psql
+psql -U armstrong
+su - psql
+su - psql -U armstrong
+su --preserve-environment postgres
+apt-get install docker
+docker pull dimitri/pgloader
+sudo apt-get install wget ca-certificates
+wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install postgresql-9.6 pgadmin3
+apt update
+apt-get install pgloader 
+pgloader --help
+pgloader 
+su - postgre
+su - postgres 
+apt-get update
+apt install postgresql-9.6 
+mkfs
+phpstorm.sh 
+./bootstrap-debian.sh
+su - ./bootstrap-debian.sh
+su ./bootstrap-debian.sh
+su
+./bootstrap-debian.sh
+chmod +x bootstrap-debian.sh
+./bootstrap-debian.sh
+apt autoremove
+pgloader --help
+apt update
+apt list --upgradable
+apt-get install postgresql* --only-upgrade
+apt-get install postgresql-10
+apt upgrade
+apt help
+apt full-upgrade
+apt autoclean
+apt autoremove
+apt full-upgrade
+apt upgrade
+sudo apt-get install -y sbcl                                                              git curl patch unzip                                              devscripts pandoc                                                 libsqlite3-dev                                                    freetds-dev
+sudo apt-get install -y sbcl                                                              git curl patch unzip                                              devscripts pandoc                                                 libsqlite3-dev                                                    freetds-dev
+pgloader --help
+cd Download/pgloader/
+./build/bin/pgloader mysql"//root@localhost/studyroom postgresql:///studyroom -v
+"
+./build/bin/pgloader mysql://root@localhost/studyroom postgresql:///studyroom -v
+./build/bin/pgloader --help
+pgloader --help
+pgloader --help 
+cd build/bin/
+pgloader
+pgloader --help
+./pgloader --help
+./pgloader ../../studyroom.csv pgsql:///pgloader?tablename=studyroom
+pgloader mysql://root@localhost/studyroom postgresql:///armstrong/studyroom
+./pgloader mysql://root@localhost/studyroom postgresql:///armstrong/studyroom
+./pgloader mysql://root@localhost/studyroom postgresql:///armstrong/studyroom -v
+mysql
+/etc/init.d/mysql start
+./pgloader mysql://root@localhost/studyroom postgresql:///armstrong/studyroom -v
+mysql://root@localhost/studyroom
+su - postgres 
+apt list post*
+apt-get postgresql-10
+apt-get install postgresql-10
+apt remove postgresql-client-10
+apt purge postgresql-client-10
+apt-get install postgresql-client-10
+apt-get install libpq5
+apt-get install libssl1.0.0
+apt-get install -f
+sudo apt-get install postgresql-common=151.pgdg12.4+1
+sudo apt-get install postgresql-9.3 postgresql-contrib-9.3
+sudo apt-get update && sudo apt-get upgrade
+sudo apt-get install postgresql-9.3 postgresql-contrib-9.3
+apt-get install python-software-properties
+apt-get install apt-file
+apt-get install python-software-properties
+apt-get install apt-file
+createdb  fierdb
+su - postgres 
+cd ../../../
+git clone https://github.com/maxlapshin/mysql2postgres.git
+cd mysql2postgres
+bundle install
+cat /var/lib/gems/2.3.0/extensions/x86_64-linux/2.3.0/pg-0.21.0/mkmf.log
+gem install mysqltopostgres
+git clone https://github.com/maxlapshin/mysql2postgres.git
+bundle install
+gem build mysqltopostgres.gemspec
+sudo gem install mysqltopostgres-0.3.1.gem
+ls
+bundle install
+gem build mysqltopostgres.gemspec
+sudo gem install mysqltopostgres-0.3.1.gem
+mysqltopostgres
+bundle install
+ipaddr
+ipmaddr 
+ipaddr
+ip
+ippfind 
+cls
+clear
+apt-get update
+apt-get install libpq-dev
+exit
+mysql -u root
+apt-get install postgresql
+apt-get update
+apt-get install -t wheezy-pgdg postgresql-9.3
+sudo apt-get update –fix-missing
+apt-get update –fix-missing
+apt-get update –f
+apt update –fix-missing
+dpkg –configure -a
+apt-get install -f
+gedit /var/lib/dpkg/status
+gem
+gem list
+gem list my*
+exit
+git add .
+cd studyroom/
+git add .
+git status
+git commit -m "Updated dbmgmt,php. required.php"
+git push heroku master
+heroku ps:scale web=1
+heroku open
+mysql -u root
+cd ~
+su - postgres 
+ls
+cat sqldump.txt 
+ls
+whereis postgres.conf
+cd /usr/share/man/man1/
+cat postgres.1.gz 
+clear
+whereis pg_hba.conf
+cd /etc/
+ls
+cd postgresql
+ls
+cat pga_hba.conf 
+/etc/init.d/apache2 start
+/etc/init.d/postgresql start
+cd ~/
+ls
+cd Download/phppgadmin/
+ls
+php 
+php -S
+php -S localhost:80 -t .
+php -S localhost:8080 -t .
+ln -s /usr/share/phppgadmin /var/www/phppgadmin
+bundle install
+gem build mysqltopostgres.gemspec
+sudo gem install mysqltopostgres-0.2.20.gem
+sudo gem install mysqltopostgres-0.3.1.gem
+mysqltopostgres
+mysqltopostgres 
+ls
+cd bin/
+ls
+mysqltopostgres 
+cd ..
+bundle install
+bundle show
+bundle show postgres-pr
+ls
+cat Gemfile
+ls
+cat Gemfile.lock 
+gem build mysqltopostgres.gemspec
+gem install mysqltopostgres-0.3.1.gem
+ls
+mysqltopostgres
+mysqltopostgres 
+cd /usr/local/bin/mysqltopostgres
+cd /usr/local/bin/
+ls
+pstorm 
+mysqltopostgres 
+cd /var/lib/gems/2.3.0/gems/mysqltopostgres-0.3.1/bin/
+ls
+cat mysqltopostgres 
+yum
+apt-get install yum
+sudo usermod -aG sudo,adm postgre
+postgr
+postgre
+postgres
+su - postgres
+sudo -u postgres psql
+ls
+sudo -u postgres psql
+su - postgres 
+cd studyroom/
+su - postgres 
+sudo su'
+'
+sudo su
+ls
+#DataSourceSettings#
+#LocalDataSource: studyroom@localhost [2]
+#BEGIN#
+<data-source source="LOCAL" name="studyroom@localhost [2]" uuid="a8b62f53-411c-4768-8f01-cb9c550faac3"><database-info product="MySQL" version="5.5.5-10.1.26-MariaDB" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.44 ( Revision: b3cda4f864902ffdde495b9df93937c3e20009be )"><extra-name-characters>#@</extra-name-characters><identifier-quote-string>`</identifier-quote-string></database-info><case-sensitivity plain-identifiers="exact" quoted-identifiers="exact"/><driver-ref>mysql</driver-ref><synchronize>true</synchronize><jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver><jdbc-url>jdbc:mysql://localhost:3306/studyroom</jdbc-url><secret-storage>master_key</secret-storage><user-name>root</user-name><introspection-schemas>*:studyroom</introspection-schemas><driver-properties><property name="autoReconnect" value="true"/><property name="zeroDateTimeBehavior" value="convertToNull"/><property name="tinyInt1isBit" value="false"/><property name="characterEncoding" value="utf8"/><property name="characterSetResults" value="utf8"/><property name="yearIsDateType" value="false"/></driver-properties></data-source>
+#END#
+su - postgres
+sudo postgres
+groups
+users
+users --help
+groups --help
+groups root
+groups -a root
+groups --a root
+groups --
+phpstorm.sh 
+/etc/init.d/mysql start
+apt-get install wine64
+apt-get install wine
+wine
+apt-get install wine32
+wine64
+wine --help
+dpkg --add-architecture i386 && apt-get update && apt-get install wine32
+exit
+psql -h localhost -U armstrong -d studyroom
+psql -h localhost -d studyroom -U armstrong
+clear
+psql -h localhost -U armstrong -d studyroom
+clear
+psql -h localhost -U armstrong -d studyroom
+clear
+psql -h localhost -U armstrong -d studyroom
+clear
+psql -h localhost -U armstrong -d studyroom
+clear
+psql -h localhost -U armstrong -d studyroom
+cd ~/opt/
+cd opt/
+cd /opt/
+cd lampp/htdocs/public/stroom/
+ls
+psql -h localhost -U armstrong -d studyroom
+clear
+psql -h localhost -U armstrong -d studyroom
+clear
+psql -h localhost -U armstrong -d studyroom
+su - postgre
+psql
+psql -h localhost -U postgre
+psql -h localhost -U armstrong
+psql -h localhost
+Littleguy
+psql -h localhost
+psql -h localhost \password psql
+psql -h localhost \password postgre
+su - postgres 
+ls
+cat studyroom.sql 
+su - postgres 
+ls
+cat studyroom.sql 
+ls
+cd studyroom/
+ls
+phpstorm
+phpstorm.sh 
+sevice postgres start
+systemctl postgres start
+/etc/init.d/postgresql start
+su - postgres
+cd /bin/bash
+cd /bin
+ls
+ls ba*
+,/bash
+./bash 
+ls
+passwd 
+passwd
+git add .
+cd studyroom/
+git add .
+git status
+git add .
+git status
+git clean
+git help
+git init
+git status
+git add .
+git status
+git init 
+git status
+git commit -m "Successfully imported SQL to postGresql"
+git push
+heroku addons
+history 
+history heroku
+history help
+history --help
+history -w strhistory.txt

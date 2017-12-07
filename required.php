@@ -25,7 +25,6 @@ require_once 'class/error.php';
 global $db;
 $db = new DbMgmt('localhost', 'armstrong', 'Littleguy007', 'stroom');
 
-$user = new User($db);
 
 $errors = new SiteError();
 session_start();
@@ -33,5 +32,6 @@ session_start();
 DEFINE('ROOT', '/public/studyroom.com.ng');
 DEFINE('PAGE', $_SERVER['PHP_SELF']);
 DEFINE('CURRENT_PAGE', ROOT.PAGE);
+
 
 require_once 'functions.php';

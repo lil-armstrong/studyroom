@@ -220,7 +220,7 @@
                                         <option value="">---</option>
                                         <?php
                                         /*Get all the departments from the database*/
-                                        $query = "SELECT * FROM `departments` WHERE 1 ORDER BY `name`";
+                                        $query = "SELECT * FROM departments ORDER BY name";
                                         $result = $db->querySQLi($query)->fetchAll(2);
                                         foreach ($result as $depts => $dept) {
                                             echo "<option value='" . $dept{'name'} . "'>" . ucfirst($dept{'name'}) . "</option>\n";
