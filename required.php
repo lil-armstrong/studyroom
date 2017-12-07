@@ -23,7 +23,8 @@ require_once 'class/student.php';
 require_once 'class/tutor.php';
 require_once 'class/error.php';
 global $db;
-$db = new DbMgmt('localhost', 'armstrong', 'Littleguy007', 'studyroom');
+$db = new DbMgmt('localhost', 'armstrong', 'Littleguy007', 'stroom');
+
 $user = new User($db);
 
 $errors = new SiteError();

@@ -12,13 +12,11 @@ class User extends LogAbstract implements UserInterface
     public $messenger;
     protected $_id;
     protected $_conn;
-    private $_user_table;
     private $_username;
     private $_email;
     private $_log;
     private $_type;
     private $_help_count;
-    private $_feature;
     private $_dept;
 
     /**

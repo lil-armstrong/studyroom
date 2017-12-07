@@ -16,7 +16,6 @@ class DbMgmt extends MsgAbstract implements DbMgmtInterface
         self::$_user = $user;
         self::$_pass = $pass;
         self::$_db_name = $db_name;
-        self::$_conn = new PDO("pgsql:host=" . self::$_host . ";dbname=" . self::$_db_name, self::$_user, self::$_pass);
         #Attempt database connection
         $this->dbConnect();
 
@@ -24,27 +23,17 @@ class DbMgmt extends MsgAbstract implements DbMgmtInterface
 
     private function dbConnect()
     {
-        if ($this->checkConnect(0))
-            return true;
-        return false;
-
-    }
-
-    public function checkConnect($public = (0 | 1))
-    {
+        self::$_conn = new PDO("pgsql:host=" . self::$_host . ";dbname=" . self::$_db_name, self::$_user, self::$_pass);
         try {
             // set the PDO error mode to exception
             self::$_conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            self::$_conn->exec("SET CHARACTER SET utf8");
 
             $msg = "Database connection successful";
-            if ($public)
-                MsgAbstract::successMsg($msg);
         } catch (PDOException $e) {
-            if ($public)
-                MsgAbstract::errorMsg($e->getMessage(), $e->getCode(), 'Faulty database connection');
+            MsgAbstract::errorMsg($e->getMessage(), $e->getCode(), 'Faulty database connection');
         }
     }
+
 
     public function __destruct()
     {

@@ -34,6 +34,5 @@ interface DbMgmtInterface
     function querySQLi($query, $args);
 
     function TableExists($table);
-    function checkConnect($public);
 
 }
