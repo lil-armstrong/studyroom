@@ -280,7 +280,7 @@ class User extends LogAbstract implements UserInterface
 
     public function getAllPersonalMsg()
     {
-        $query = "SELECT * FROM " . $this->getUserType() . "_msg INNER JOIN questions WHERE " . $this->getUserType() . "_id='" . $this->getID() . "' AND " . $this->getUserType() . "_msg.qid=questions.qid ORDER BY msg_date DESC LIMIT 10";
+        $query = "SELECT * FROM " . $this->getUserType() . "_msg INNER JOIN questions USING(qid) WHERE " . $this->getUserType() . "_id='" . $this->getID() . "' ORDER BY msg_date DESC LIMIT 10";
         return $this->_conn->querySQLi($query)->fetchAll(2);
     }
 
