@@ -1,0 +1,21 @@
+<templateSet group="PHP">
+  <template name="isset:post" value="isset($_POST{'$0$'})?$_POST{'$0$'}:'';" description="Check if post index is set" toReformat="true" toShortenFQNames="true">
+    <variable name="0" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="isset:get" value="isset($_GET{'$0$'})?$_GET{'$0$'}:'';" description="Check if get index is set" toReformat="false" toShortenFQNames="true">
+    <variable name="0" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="debug:view" value="echo &quot;&lt;pre&gt;&quot;;&#10;print_r($array$);&#10;echo &quot;&lt;pre&gt;&quot;;&#10;exit();" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="array" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+</templateSet>
